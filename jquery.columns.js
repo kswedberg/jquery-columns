@@ -18,6 +18,7 @@ $.fn.columns = function(options) {
     var $container = $(this),
       containerWidth = $container.width(),
       nname = this.nodeName,
+      cname = this.className ? this.className + ' ' : '',
       $kids = $container.children(),
       col = 1,
       item = 1,
@@ -35,7 +36,7 @@ $.fn.columns = function(options) {
       var itemStart = (klength/opts.columns)*col;
       if (i+1 >= itemStart || i === klength-1) {
         item = Math.ceil(itemStart);
-        var $parent = $('<' + nname + ' class="' + colClass + ' ' + colClass + '-' + col + '"></' + nname + '>')
+        var $parent = $('<' + nname + ' class="' + cname + colClass + ' ' + colClass + '-' + col + '"></' + nname + '>')
           .append($(items));
         var lastCol = i === klength-1;
         
