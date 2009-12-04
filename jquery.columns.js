@@ -61,21 +61,21 @@ $.fn.columns = function(options) {
 
     $container.remove();
 
-
   });
   function calculateWidths(containerWidth, last) {
     if (!opts.autoWidth) { return; }
     var fluff = 0, 
-        parent = this;
+        $parent = $(this);
     $.each(['paddingLeft', 'paddingRight', 'marginLeft', 'borderLeftWidth', 'borderRightWidth'], function(index, val) {
-      fluff += parseInt(parent.css(val), 10);
+      fluff += ( parseInt($parent.css(val), 10) || 0);
     });
+
     fluff = (fluff * opts.columns) + (opts.gutter * (opts.columns-1));
     var cssProps = {
       width: roundDown( (containerWidth - fluff)  / opts.columns ),
       marginRight: last ? 0 : opts.gutter
     };
-    parent.css(cssProps);
+    $parent.css(cssProps);
   }
   
   return this;
