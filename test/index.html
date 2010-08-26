@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Columns Plugin Tests</title>
+  <link rel="stylesheet" href="qunit.css" type="text/css" media="screen, projection" />
+  <style type="text/css">
+  .column-wrapper {
+    overflow: hidden;
+    margin: 1em 0;
+    padding: 2em;
+    background-color: #ffd;
+  }  
+  .floatcols {
+    float: left;
+  }
+  
+  .dummy-wrapper {
+    overflow: hidden;
+    margin: 1em 0;
+    background-color: #dfd;
+  }
+  .dummy {
+    float: left;
+    width: 47%;
+    padding: 0 1% 0 2%;
+  }
+  .dummy-last {
+    background-color: #fdd;
+  }
+  
+  dl { margin-right: 20px;}
+  dt { font-weight: bold; }
+  dd {margin-left: 0; padding-left: 0; background-color: #6f6;}
+  #qunit-fixture {
+    width: 900px;
+/*    position: relative;
+    top: 0;
+    left: 0;
+*/
+  }
+  </style>
+  
+</head>
+
+<body>
+  
+  <h1 id="qunit-header">Columns Plugin Tests</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">
+	
+    <dl class="mydefs">
+      <dt>one</dt>
+      <dd>the loneliest number</dd>
+      <dd>a sign of victory</dd>
+      <dd>singular sensation</dd>
+      <dd>every little step you take</dd>
+      <dd>two three four</dd>
+      <dt>two!</dt>
+      <dd>are better than one</dd>
+      <dd>two two</dd>
+      <dd>to two or not to two</dd>
+      <dt>three</dt>
+      <dd>three blind mice</dd>
+      <dd>see how they run</dd>
+      <dt>four</dt>
+      <dd>for</dd>
+      <dd>fore</dd>
+      <dd>floor</dd>
+      <dd>door</dd>
+      <dd>no more</dd>  
+    </dl>
+    <ul class="mylist">
+      <li>Lorem ipsum</li>
+      <li>dolor sit amet, </li>
+      <li>consectetur adipisicing elit, </li>
+      <li>sed do eiusmod tempor incididunt </li>
+      <li>ut labore et dolore magna aliqua. </li>
+      <li>Ut enim ad minim veniam, </li>
+      <li>quis nostrud </li>
+      <li>exercitation ullamco laboris </li>
+      <li>nisi ut aliquip ex </li>
+      <li>ea commodo </li>
+      <li>consequat. </li>
+      <li>Duis aute</li>
+      <li>irure dolor </li>
+      <li>in reprehenderit in </li>
+      <li>voluptate velit esse cillum dolore </li>
+      <li>eu fugiat </li>
+      <li>nulla pariatur. </li>
+      <li>Excepteur sint </li>
+      <li>occaecat cupidatat non </li>
+      <li>proident, sunt in culpa </li>
+      <li>qui officia </li>
+      <li>deserunt mollit </li>
+      <li>anim id est laborum.</li>
+    </ul>
+
+    <ol class="mylist">
+      <li>consequat. </li>
+      <li>in reprehenderit in </li>
+      <li>voluptate velit esse cillum dolore </li>
+      <li>eu fugiat </li>
+      <li>nulla pariatur. </li>
+      <li>Excepteur sint </li>
+      <li>occaecat cupidatat non </li>
+      <li>proident, sunt in culpa </li>
+      <li>qui officia </li>
+      <li>deserunt mollit </li>
+      <li>anim id est laborum.</li>
+      <li>Lorem ipsum</li>
+      <li>dolor sit amet, </li>
+      <li>consectetur adipisicing elit, </li>
+      <li>sed do eiusmod tempor incididunt </li>
+      <li>ut labore et dolore magna aliqua. </li>
+      <li>Ut enim ad minim veniam, </li>
+      <li>quis nostrud </li>
+      <li>exercitation ullamco laboris </li>
+      <li>nisi ut aliquip ex </li>
+      <li>ea commodo </li>
+    </ol>
+
+    <div class="yourlist">
+      <p>hello there</p>
+      <p>hello again</p>
+      <p>hi</p>
+      <p>bonjour</p>
+      <p>bonjuorno</p>
+      <p>hola</p>
+      <p>aloha</p>
+      <p>whatever</p>
+  
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="qunit.js"></script>
+  <script src="../jquery.columns.js"></script>
+  <script src="test.js"></script>
+  
+</body>
+</html>
