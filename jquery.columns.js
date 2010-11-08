@@ -1,11 +1,18 @@
-/***************************************
-  Columns jQuery Plugin
-   @author Karl Swedberg
-   @version 1.0 (November 25, 2009)
-   @requires jQuery v1.2.6+
-
-***************************************/
-
+/*!
+ * jQuery Columns Plugin v1.0
+ *
+ * Date: Thu Aug 26 00:37:22 2010 -0400
+ * Requires: jQuery v1.2.6+
+ *
+ * Copyright 2010, Karl Swedberg
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ * 
+ * 
+ *
+*/
 
 (function($) {
 $.fn.columns = function(options) {
